@@ -1,11 +1,8 @@
 label {
-    top: 50%;
-    left: 50%;
     display: block;
-    transform: translate(-50%,-50%);
-    position: absolute;
-    width: 250px;
-    height: 279px;
+    position:relative;
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
     cursor: pointer;
     perspective: 1000px;
     transform-style: preserve-3d;
@@ -24,12 +21,13 @@ label {
     height: 100%;
     text-align: center;
     backface-visibility: hidden;
-    line-height: 200px;  
+    /*line-height: 200px; */ 
     background-color: aquamarine; 
 }
 .card .back{
     /*background:url('./logo192.png');*/
-    transform: rotateX(180deg);    
+    transform: rotateX(180deg);
+    
 }
 label:hover .card{
     transform: rotateX(20deg);
@@ -47,4 +45,38 @@ input{
 label:hover :checked + .card{
     transform: rotateX(160deg);
     box-shadow: 0 20px 20px rgba(50, 50, 50, .4);
-}  
+} 
+
+.board {
+    position: sticky;
+    margin-top: 1em;
+    margin-left: 1em;
+    width: 50vw;
+    height: 50vw;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: calc(100vh - 2em);
+    max-height: calc(100vh - 2em);
+    overflow: hidden;
+    
+    
+  }
+  
+  .overlay {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .plot {
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
+    background-size: 100% 100%;
+    box-shadow: inset 2px 2px 0 rgba(7, 7, 7, 0.993), inset -2px -2px 0 #080808ec;
+  }
