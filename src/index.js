@@ -9,7 +9,7 @@ export default class Sample extends React.Component {
         this.initObjArr(this.state.objarr);
       }
       initObjArr(arr){
-        let str=['A','B','C','D','E','F','G','H'];
+        let str=['/Assets/1.png','/Assets/2.png','/Assets/3.png','/Assets/4.png','/Assets/5.png','/Assets/6.png','/Assets/7.png','/Assets/8.png'];
         str=str.concat(str);
         this.shuffleArray(str);
         for (let nr=0;nr<16;nr++){
@@ -84,8 +84,8 @@ export default class Sample extends React.Component {
                     <label key={index.toString()}  htmlFor={index.toString()}>
                     <input type="checkbox" id={index.toString()} checked={obj.isflipped} onChange={(event)=>this.handleChange(event,obj)} onClick={(event)=>this.mesage(event,obj)}/>
                     <div className="card">
-                        <div className="front"></div>
-                        <div className="back">{obj.val}</div>
+                        <div className="front" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + './Assets/logo.png'})` }}></div>
+                        <div className="back" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + obj['val']})` }}></div>
                     </div>
                 </label>))}
             </div>

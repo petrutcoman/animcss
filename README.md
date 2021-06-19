@@ -1,5 +1,8 @@
-An animated card flip in React using CSS by 
-[SoftCode](https://softcode18.blogspot.com/) 
+A very simple memory game made for learning React purposes.<br>
+
+Uses FanArt created by [Kutty-Sark](https://www.deviantart.com/kutty-sark) @ [DeviantArt](https://www.deviantart.com/)<br>
+
+![Kimetsu](/Imgres/Kimetsu.jpg)
 
 # Getting Started with Create React App
 
@@ -27,3 +30,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.

@@ -27,16 +27,15 @@ label {
      
 }
 .card .front {
-    /*background: url('');*/
-    background-color: aquamarine;
+    background-color: rgb(13, 14, 13);
+    background-size: 100% 100%;
 }
 .card .back{
-    /*background:url('./logo192.png');*/
     transform: rotateX(180deg);
-    background-color: aquamarine;
-    color: indigo;
     font-weight: bold;
     font-size: larger;
+    background-size: 100% 100%;
+    /*box-shadow: inset 2px 2px 0 rgba(7, 7, 7, 0.993), inset -2px -2px 0 #080808ec;*/
     
 }
 label:hover .card{
@@ -68,6 +67,7 @@ label:hover :checked + .card{
     max-height: calc(100vh - 2em);
     overflow: hidden;
     border: solid 2px black;
+    background: aquamarine;
     
     
 }
