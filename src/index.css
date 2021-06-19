@@ -16,27 +16,36 @@ label {
     transition: all 600ms;    
 }
 .card div {
+    display: flex;
     position: absolute;
     width: 100%;
     height: 100%;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     backface-visibility: hidden;
-    /*line-height: 100%;*/
-    background-color: aquamarine; 
+     
+}
+.card .front {
+    /*background: url('');*/
+    background-color: aquamarine;
 }
 .card .back{
     /*background:url('./logo192.png');*/
     transform: rotateX(180deg);
+    background-color: aquamarine;
+    color: indigo;
+    font-weight: bold;
+    font-size: larger;
     
 }
 label:hover .card{
     transform: rotateX(20deg);
-    box-shadow: 0 21px 21px rgba(50, 50, 50, .4);
+    box-shadow: 0 2px 2px rgba(50, 50, 50, .4);
     
 }
 input{
    display: none; 
-   text-align: center;
 }
 :checked + .card{
     transform: rotateX(180deg);
@@ -44,7 +53,7 @@ input{
 }
 label:hover :checked + .card{
     transform: rotateX(160deg);
-    box-shadow: 0 20px 20px rgba(50, 50, 50, .4);
+    box-shadow: 0 2px 2px rgba(50, 50, 50, .4);
 } 
 
 .board {
@@ -61,9 +70,9 @@ label:hover :checked + .card{
     border: solid 2px black;
     
     
-  }
+}
   
-  .overlay {
+.overlay {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 25% 25% 25% 25%;
@@ -73,16 +82,4 @@ label:hover :checked + .card{
     width: calc(100% - 1em);
     height: calc(100% - 1em);
     transform-style: preserve-3d;
-    /*padding-inline:10px 10px 10px 10px;*/
-    
-   
-
-    
-  }
-
-  .plot {
-    width: calc(100% - 5px);
-    height: calc(100% - 5px);
-    background-size: 100% 100%;
-    box-shadow: inset 2px 2px 0 rgba(7, 7, 7, 0.993), inset -2px -2px 0 #080808ec;
-  }
+}
