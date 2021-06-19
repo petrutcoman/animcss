@@ -1,6 +1,7 @@
 A very simple memory game made for learning React purposes.<br>
 
 Uses FanArt created by [Kutty-Sark](https://www.deviantart.com/kutty-sark) @ [DeviantArt](https://www.deviantart.com/)<br>
+Uses CSS created by [SoftCode](https://softcode18.blogspot.com/).
 
 ![Kimetsu](/Imgres/Kimetsu.jpg)
 
