@@ -83,3 +83,25 @@ label:hover :checked + .card{
     height: calc(100% - 1em);
     transform-style: preserve-3d;
 }
+.textstuff{
+    position: relative;
+    border: solid 2px black;
+    max-width: calc(50vh - 2em);
+    max-height: calc(50vh - 2em);
+    width:20vw;
+    height:20vw;
+    margin-top: 1em;
+    display: grid;
+    grid-template-rows: 10% 10% 10%;
+    gap: 10px;
+    text-align: left;
+    justify-content: left;
+    justify-items: left;
+    background: aquamarine;
+    padding-inline: 10px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
